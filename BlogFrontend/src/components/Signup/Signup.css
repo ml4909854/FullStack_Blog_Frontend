@@ -1,0 +1,198 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.container > form {
+  width: 400px;
+  padding: 40px;
+  margin: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 👁️ Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: lightblue;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(50, 225, 37);
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.container > form {
+  width: 400px;
+  padding: 40px;
+  margin: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box; /* added explicitly here */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 👁️ Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box; /* added explicitly */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: lightblue;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(50, 225, 37);
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .container > form {
+    width: 90%;
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box; /* ensure box-sizing here */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .eye-icon {
+    font-size: 16px;
+    top: 55%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  position: relative;
+  top: 100px;
+  }
+  .container > form {
+    width: 100%;
+    
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box; /* added to ensure form sizing */
+  }
+  input,
+  select,
+  textarea {
+    padding: 10px 12px; /* reduced left/right padding */
+    font-size: 14px;
+    margin-top: 15px; /* slightly smaller margin */
+    box-sizing: border-box;
+  }
+  .password-wrapper input {
+    padding-right: 40px; /* keep space for eye icon */
+  }
+  .eye-icon {
+    font-size: 14px;
+    top: 50%;
+  }
+  button {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%; /* full width button for mobile */
+  }
+}

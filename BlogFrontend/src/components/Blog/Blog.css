@@ -1,0 +1,90 @@
+/* Blog.css */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: lightblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container > div {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease;
+}
+
+.container > div:hover {
+  transform: translateY(-4px);
+}
+
+.container > div > h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.container > div > p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.container > div > p strong {
+  color: #7f8c8d;
+}
+
+/* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .container > div {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container > div > h3 {
+    font-size: 22px;
+  }
+
+  .container > div > p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .container > div {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .container > div > h3 {
+    font-size: 18px;
+  }
+
+  .container > div > p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
