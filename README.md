@@ -1,4 +1,5 @@
-# Deploy Link: https://full-stack-blog-frontend-six.vercel.app/
+# Deploy Link: https://full-stack-blog-frontend-six.vercel.app
+# video demo : https://drive.google.com/file/d/1_KwsZm24QQf4rSEHKAhrLHHpkH01wQwu/view?usp=sharing
 # 📝 Full Stack Blog Application
 
 A modern full-stack blog platform that allows users to read, write, update, and delete blog posts. Built with **React** for the frontend and **Node.js + Express + MongoDB** for the backend.
